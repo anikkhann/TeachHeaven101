@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="yourCart.css" />
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,11 +17,12 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
     <title>Your Cart</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row d-flex justify-content-between">
+    <!-- <div class="container">
+      <div class="row d-flex justify-content-between mt-4">
         <div class="col-md-4"></div>
         <div class="col-md-4 col-6 d-flex justify-content-center">
           <h3>YOUR CART</h3>
@@ -29,20 +31,210 @@
           <button class="btn button mb-2">CHECKOUT</button>
         </div>
       </div>
-      <div class="row mt-4">
-        <div class="col-md-5">
+      <div class="row mt-4 d-flex justify-content-between ">
+        <div class="col-md-6  d-flex  justify-content-center">
           <h6>ITEM</h6>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2  d-flex  justify-content-center">
           <h6>PRICE</h6>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2  d-flex  justify-content-center">
           <h6>QUANTITY</h6>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2  d-flex justify-content-end">
           <h6>TOTAL</h6>
         </div>
       </div>
-    </div>
+    </div> -->
+  
+  <!--Cart Section-->
+  <section class="mt-5">
+      <div class="container">
+        <!-- Heading -->
+        <div class="row d-flex justify-content-between mt-4">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 col-6 d-flex justify-content-center">
+            <h3>YOUR CART</h3>
+          </div>
+          <div class="col-md-4 col-6 d-flex justify-content-center">
+            <button class="btn button mb-2">CHECKOUT</button>
+          </div>
+        </div>
+      
+        <!-- Heading end -->
+          <div class="cart mt-4">
+          <div class="table-responsive">
+              <table class="table">
+                  <thead class="table_head">
+                      <tr>
+                          <th scope="col"class="">ITEM</th>
+                          <th scope="col"class="">PRICE</th>
+                          <th scope="col"class="">QUANTITY</th>
+                          <th scope="col"class="">TOTAL</th>
+                      </tr>
+                  </thead>
+                  <tbody class="table_body_text">
+                      <tr>
+                          <td>
+                              <div class="main">
+                                  <div class="d-flex">
+                                     <img src="../images/vantz-color-ink-pos-1_1200x.jpg"alt="">
+                                      <div class="des mx-2">
+                                        <p>lorem ipsum ufebri </p>
+                                        <p>lorem ipsum ufebri </p>
+                                     
+
+                                    </div>
+                                  </div>
+                                  </div>
+                                  <!-- <div class="des">
+                                      <p>lorem ipsum</p>
+                                      <p>khamna</p>
+                                      <p>jamuna</p>
+                                  </div> -->
+                              </div>
+                          </td>
+                          <td>
+                              <h6>$20.00</h6>
+                          </td>
+                          <td>
+                              <div class="counter">
+                                  <!-- <i class="fas fa-angle-down"></i>
+                                  <input class="input-number"type="text"
+                                  value="1"min="0"max="10">
+                                  <i class="fas fa-angle-up"></i> -->
+                                  <div class="quantity-control" data-quantity="">
+                                    <button class="quantity-btn" data-quantity-minus=""><svg viewBox="0 0 409.6 409.6">
+                                        <g>
+                                          <g>
+                                            <path d="M392.533,187.733H17.067C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h375.467 c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z" />
+                                          </g>
+                                        </g>
+                                      </svg></button>
+                                    <input type="number" class="quantity-input" data-quantity-target="" value="1" step="1" min="1" max="" name="quantity">
+                                    <button class="quantity-btn" data-quantity-plus=""><svg viewBox="0 0 426.66667 426.66667">
+                                        <path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" /></svg>
+                                    </button>
+                                  </div>
+                                
+                                  <p>remove</p>
+                              </div>
+                             
+                          </td>
+                          <td>
+                              <h6>$20.00</h6>
+                          </td>
+                      </tr>
+                      <!----->
+                      <tr>
+                          <td>
+                              <div class="main">
+                                  <div class="d-flex">
+                   <!--W=145 H=98--> <img src="../images/vantz-color-ink-pos-1_1200x.jpg"alt="">
+                                      <div class="des mx-2">
+                                        <p>lorem ipsum</p>
+                                        <p>khamna</p>
+                                        <p>jamuna</p>
+                                      </div>
+                                  </div>
+                                  <!-- <div class="des">
+                                      <p>lorem ipsum</p>
+                                  </div> -->
+                              </div>
+                          </td>
+                          <td>
+                              <h6>$20.00</h6>
+                          </td>
+                          <td>
+                              <div class="counter">
+                                  <!-- <i class="fas fa-angle-down"></i>
+                                  <input class="input-number"type="text"
+                                  value="1"min="0"max="10">
+                                  <i class="fas fa-angle-up"></i> -->
+                                  <div class="quantity-control" data-quantity="">
+                                    <button class="quantity-btn" data-quantity-minus=""><svg viewBox="0 0 409.6 409.6">
+                                        <g>
+                                          <g>
+                                            <path d="M392.533,187.733H17.067C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h375.467 c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z" />
+                                          </g>
+                                        </g>
+                                      </svg></button>
+                                    <input type="number" class="quantity-input" data-quantity-target="" value="1" step="1" min="1" max="" name="quantity">
+                                    <button class="quantity-btn" data-quantity-plus=""><svg viewBox="0 0 426.66667 426.66667">
+                                        <path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" /></svg>
+                                    </button>
+                                  </div>
+                                  <p>remove</p>
+                              </div>
+                             
+                          </td>
+                          <td>
+                              <h6>$20.00</h6>
+                          </td>
+                      </tr>
+                      <!----->
+                      <tr>
+                          <td>
+                              <div class="main">
+                                  <div class="d-flex">
+                   <!--W=145 H=98--> <img src="../images/vantz-color-ink-pos-1_1200x.jpg"alt="">
+                                      <div class="des mx-2">
+                                        <p>lorem ipsum</p>
+                                        <p>khamna</p>
+                                        <p>jamuna</p>
+                                      </div>
+                                  </div>
+
+                                  <!-- <div class="des">
+                                      <p>lorem ipsum</p>
+                                  </div> -->
+                              </div>
+                          </td>
+                          <td>
+                              <h6>$20.00</h6>
+                          </td>
+                          <td>
+                              <div class="counter">
+                                  <!-- <i class="fas fa-angle-down"></i>
+                                  <input class="input-number"type="text"
+                                  value="1"min="0"max="10">
+                                  <i class="fas fa-angle-up"></i> -->
+                                  <div class="quantity-control" data-quantity="">
+                                    <button class="quantity-btn" data-quantity-minus=""><svg viewBox="0 0 409.6 409.6">
+                                        <g>
+                                          <g>
+                                            <path d="M392.533,187.733H17.067C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h375.467 c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z" />
+                                          </g>
+                                        </g>
+                                      </svg></button>
+                                    <input type="number" class="quantity-input" data-quantity-target="" value="1" step="1" min="1" max="" name="quantity">
+                                    <button class="quantity-btn" data-quantity-plus=""><svg viewBox="0 0 426.66667 426.66667">
+                                        <path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" /></svg>
+                                    </button>
+                                  </div>
+                                  <p>remove</p>
+                              </div>
+                          </td>
+                          <td>
+                              <h6>$20.00</h6>
+                          </td>
+                      </tr>
+                      <!----->
+                  </tbody>
+              </table>
+          </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 d-flex justify-content-end">
+                  <h5>Subtotal $12345</h5>
+              </div>
+          </div>
+      </div>
+     
+  </section>
+
+<script>
+  
+</script>
   </body>
 </html>

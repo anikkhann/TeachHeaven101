@@ -1,13 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
 
-.body_color{
-   background-color:  #FFF9EA;
-}
+
+
 .login_form{
 text-align: center;
 }

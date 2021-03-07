@@ -1,37 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
 
-.body_color{
+
+.body_color_two{
    background-color:  #FFF9EA;
 }
 
-.card_color{
+.card_color_two{
     /* border: none  !important; */
     background-color: #FFF9EA !important;
-    
+
 }
-.card_color:hover {
+.card_color_two:hover {
     border: 1px solid #F3D655;
+
   }
-.card_img {
+.card_img_two {
     border: 5px solid rgb(255, 255, 255); 
    
   }
   /* .card_img:hover {
     border: 5px solid #F3D655;
   } */
-  .card_button{
+  .card_button_two{
       width: 150px;
        background-color: #111730 !important;
   }
-  .image{
+  .image_two{
       position: relative;
   }
-  .overlay{
+  .overlay_two{
       position: absolute;
       top: 0;
       bottom: 0;
@@ -43,10 +39,10 @@
       transition: .5s ease;
       background-color: rgb(67, 68, 68, 0.7);
   }
-  .image:hover .overlay{
+  .image_two:hover .overlay_two{
       opacity: 1;
 }
-.detail{
+.detail_two{
     color:#fff;
     font-size: 20px;
     position: absolute;
@@ -55,19 +51,19 @@
     transform: translate(-50%, -50%);
 }
 @media screen and (max-width:768px){
-    .card_button{
+    .card_button_two{
         width: 125px;
          
     }
 }
 @media screen and (max-width:320px){
-    .card_button{
+    .card_button_two{
         width: 125px;
          
     }
 }
 @media screen and (max-width:280px){
-    .card_button{
+    .card_button_two{
         width: 85px;
         font-size: 10px !important;
          

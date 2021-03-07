@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  input{
+    /* height: 40px;
+    width:270px;
+    background-color:  white !important; */
+    border: 1px solid rgb(36, 34, 34) !important;
+ }  
+ .button{
+    background-color: #fdd007 !important;
+    color: #000000 !important;
+    cursor: pointer !important;
+    text-transform: uppercase;
+    /* white-space: nowrap !important; 
+    padding: 0 40px !important; */
+    height: 40px;
+    width:250px;
+ }
+ @media screen and (max-width: 415px){
+     .container{
+         width: 100% !important;
+     }
+     .button{
+        width: 100%;
+     }
+ }
+ @media screen and (max-width: 1024px){
+    .button{
+        width: 100%;
+    }
+ }
