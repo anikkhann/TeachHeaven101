@@ -1,10 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-  input{
+
+  .customer_info_input{
     /* height: 40px;
     width:270px;
     background-color:  white !important; */

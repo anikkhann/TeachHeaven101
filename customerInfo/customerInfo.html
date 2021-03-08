@@ -5,107 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="customerInfo.css">
-    <!-- <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-    crossorigin="anonymous"
-  /> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"
-  ></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Customer Information</title>
 </head>
 <body>
     <div class="container"  style="width:40%; border: thin black solid" >
-        <!-- <div class="col-md-12">
-            <h5>Customer Info</h5>
-            <input type="email" class="form-control" id="inputEmail4">
-            <div class="form-check col-md-6 mt-1">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Remember Me: Save my information for later.
-                </label>
-              </div>
-        </div> -->
-        <form class="row g-3"  >
-            <div class="col-md-12">
-                <h5>Customer Info</h5>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                <div class="form-check col-md-6 mt-1">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Remember Me: Save my information for later.
-                    </label>
-                  </div>
-            </div>
-            <h5>Shipping Address</h5>
-         
-            <div class="col-md-6">
-                <input type="text" class="form-control" id="inputName" placeholder="First Name">
-              </div>
-              <div class="col-md-6">
-           
-                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
-              </div>
-              <div class="col-12">
-              
-                <input type="text" class="form-control" id="Company" placeholder="Company (optional)">
-              </div>
-              <div class="col-12">
-          
-                <input type="text" class="form-control" id="inputAddress1" placeholder="Address Line 1">
-              </div>
-              <div class="col-12">
-          
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Address Line 2 (optional)">
-                </div>
-                <div class="col-12">
-                  <select class="form-select" aria-label="Default select example">
-                      <option selected>Canada</option>
-                      <option value="1">Germany</option>
-                      <option value="2">France</option>
-                      <option value="3">Italy</option>
-                    </select>
-                </div>
-              <div class="col-md-6">
-             
-                <input type="text" class="form-control" id="inputCity" placeholder="City">
-              </div>
-              <div class="col-md-6">
-        
-                <select id="inputState" class="form-select">
-                  <option selected>Province</option>
-                  <option>...</option>
-                </select>
-              </div>
-  
-              <div class="col-md-6">
-                  <input type="text" class="form-control" id="inputName" placeholder="Postal Code">
-                </div>
-                <div class="col-md-6">
-             
-                  <input type="text" class="form-control" id="inputLastName" placeholder="Telephone">
-                </div>
-              
-              <div class="col-12">
+          <form>
+            <div class="form-group">
+              <h5>Customer Info</h5>
+              <input type="email" class="form-control customer_info_input" id="inputEmail4" placeholder="Email">
+              <div class="form-group">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <input class="form-check-input customer_info_input" type="checkbox" id="gridCheck">
                   <label class="form-check-label" for="gridCheck">
-                    Remember my information for faster checkout in the future
+                    Remember Me: Save my information for later.
                   </label>
                 </div>
               </div>
+          </div>
+          <h5>Shipping Address</h5>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+               
+                <input type="text" class="form-control customer_info_input" placeholder="First Name">
+              </div>
+              <div class="form-group col-md-6">
+                 
+                <input type="text" class="form-control customer_info_input" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+             
+              <input type="text" class="form-control customer_info_input" id="inputAddress" placeholder="Company (Optional)">
+            </div>
+            <div class="form-group">
            
+              <input type="text" class="form-control customer_info_input" id="inputAddress2" placeholder="Address Line 1">
+            </div>
+            <div class="form-group">
+             
+              <input type="text" class="form-control customer_info_input" id="inputAddress2" placeholder="Address Line 2 (Optional)">
+            </div>
+            <div class="form-group">
+           
+              <select class="form-control customer_info_input" id="exampleFormControlSelect1">
+                <option>Canada</option>
+                <option>Australia</option>
+                <option>Bangladesh</option>
+                <option>Germany</option>
+                <option>France</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+            
+                <input type="text" class="form-control customer_info_input" placeholder="City">
+              </div>
+              <div class="form-group col-md-6 ">
+                <select class="form-control customer_info_input" id="exampleFormControlSelect1">
+                  <option>Province</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+              
+                <input type="text" class="form-control customer_info_input" placeholder="Postal Code">
+              </div>
+              <div class="form-group col-md-6">
+              
+                <input type="text" class="form-control customer_info_input" placeholder="Telephone">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input customer_info_input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Remember my information for faster checkout in the future
+                </label>
+              </div>
+            </div>
+           
+              
             <div class="col-12 d-flex justify-content-end">
          
               <button type="submit" class="  btn button mb-2">continue</button>
             </div>
-          
           </form>
     </div>
+
 </body>
 </html>
